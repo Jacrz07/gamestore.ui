@@ -71,7 +71,7 @@ const CatalogsList = () => {
                 setError('');
                 await catalogService.deactivate(item.id);
                 await loadData();
-                setSuccessMessage('Catálogo eliminado exitosamente');
+                setSuccessMessage('Catálogo desactivado exitosamente');
             } catch (error) {
                 console.error('Error al eliminar:', error);
                 setError(error.message || 'Error al eliminar el catálogo');
